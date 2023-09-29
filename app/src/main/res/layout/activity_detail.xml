@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detail Cash Flow"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp"
+        android:paddingEnd="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nominalDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp.250.000"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/keteranganDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dapat Bayaran Panitia Sertifikasi"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/dateDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18-10-2023"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_arrow_pemasukan" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/detailList"
+        android:layout_width="match_parent"
+        android:layout_height="524dp"
+        android:divider="#00000000"
+        tools:layout_editor_absoluteY="97dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Kembali" />
+
+</LinearLayout>
